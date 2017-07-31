@@ -1,0 +1,91 @@
+{
+	"cmds": {
+		"ambilight": "Toggle Ambilight",
+		"ambilight_mode": "Ambilight Mode"
+	},
+	"views": {
+		"generic_done": {
+			"title": "Adding device!\u0000"
+		},
+		"generic_check_device": {
+			"device_exists_message": "Device already exists. Please close the pairing wizard.\u0000"
+		}
+	},
+	"ir_generator": {
+		"flow": {
+			"cmd_received": "Button is Pressed\u0000",
+			"send_cmd": "Send Command\u0000",
+			"send_cmd_number": "Set Channel\u0000"
+		},
+		"button_labels": {
+			"onoff": "Power On/Off\u0000",
+			"power_on": "Power On\u0000",
+			"number_1": "1\u0000",
+			"number_2": "2\u0000",
+			"number_3": "3\u0000",
+			"number_4": "4\u0000",
+			"number_5": "5\u0000",
+			"number_6": "6\u0000",
+			"number_7": "7\u0000",
+			"number_8": "8\u0000",
+			"number_9": "9\u0000",
+			"dot": "Dot\u0000",
+			"brightness_up": "Increase Brightness\u0000",
+			"brightness_down": "Decrease Brightness\u0000",
+			"home": "Home\u0000",
+			"next": "Next\u0000",
+			"previous": "Previous\u0000",
+			"back": "Back\u0000",
+			"ok": "OK\u0000",
+			"list": "List\u0000",
+			"option": "Option\u0000",
+			"options": "Options\u0000",
+			"text": "Text\u0000",
+			"subtitle": "Subtitle\u0000",
+			"picture_format": "picture_format\u0000",
+			"multiview": "Multiview\u0000",
+			"picture_style": "Picture Style\u0000",
+			"2d": "2D\u0000",
+			"3d_format": "3D Format\u0000",
+			"3d_depth": "3D Depth\u0000",
+			"audio_style": "Audio Style\u0000",
+			"surround_mode": "Surround Mode\u0000",
+			"headphone_volume": "Headphone Volume\u0000",
+			"2_player_gaming": "2 Player Gaming Mode\u0000",
+			"setup": "Setup\u0000",
+			"network": "Network\u0000",
+			"scart": "SCART\u0000",
+			"netflix": "Netflix\u0000",
+			"search": "Search\u0000",
+			"source": "Source\u0000",
+			"volume_up": "Volume Up\u0000",
+			"volume_down": "Volume Down\u0000",
+			"mute": "Mute\u0000",
+			"channel_up": "Channel Up\u0000",
+			"channel_down": "Channel Down\u0000",
+			"green": "Green\u0000",
+			"tv": "TV\u0000",
+			"info": "Info\u0000",
+			"closed_captioning": "Closed captioning\u0000",
+			"rewind": "Rewind\u0000",
+			"play": "Play\u0000",
+			"stop": "Stop\u0000",
+			"fast_forward": "Fast Forward\u0000",
+			"record": "Record\u0000",
+			"pause": "Pause\u0000",
+			"guide": "Guide\u0000",
+			"arrow_up": "Up Arrow\u0000",
+			"arrow_down": "Down Arrow\u0000",
+			"arrow_left": "Left Arrow\u0000",
+			"arrow_right": "Right Arrow\u0000",
+			"red": "Red\u0000",
+			"yellow": "Yellow\u0000",
+			"blue": "Blue\u0000",
+			"hdmi_1": "HDMI 1\u0000",
+			"hdmi_2": "HDMI 2\u0000",
+			"3d": "3D\u0000"
+		}
+	},
+	"new_philips_remote": "Philips TV Remote (New Models Only)",
+	"old_philips_remote": "Philips TV Remote"
+}
