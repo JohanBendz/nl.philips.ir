@@ -3,7 +3,7 @@
   "name": {
     "en": "Philips TV IR"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "compatibility": ">=1.3.0",
   "author": {
     "name": "Athom B.V.",
