@@ -194,7 +194,7 @@ const config = {
 					},
 				},
 				interval: 30025,
-				repetitions: 1,
+				repetitions: 5,
 				minimalLength: 16,
 				maximalLength: 16,
 			},
