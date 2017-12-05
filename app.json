@@ -3,8 +3,8 @@
   "name": {
     "en": "Philips TV IR"
   },
-  "version": "1.1.1",
-  "compatibility": ">=1.5.3",
+  "version": "1.1.2",
+  "compatibility": ">=1.5.6",
   "author": {
     "name": "Athom B.V.",
     "email": "info@athom.nl"
@@ -482,8 +482,8 @@
             1
           ]
         },
-        "interval": 30025,
-        "repetitions": 1,
+        "interval": 89100,
+        "repetitions": 5,
         "minimalLength": 8,
         "maximalLength": 8
       },
@@ -1756,8 +1756,8 @@
             0
           ]
         },
-        "interval": 30025,
-        "repetitions": 1,
+        "interval": 83000,
+        "repetitions": 5,
         "minimalLength": 16,
         "maximalLength": 16
       }
