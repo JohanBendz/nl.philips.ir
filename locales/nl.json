@@ -1,91 +1,100 @@
 {
-	"cmds": {
-		"ambilight": "Ambilight Aan/Uit",
-		"ambilight_mode": "Ambilight Modus"
-	},
-	"views": {
-		"generic_done": {
-			"title": "Apparaat wordt toegevoegd!\u0000"
-		},
-		"generic_check_device": {
-			"device_exists_message": "Apparaat bestaat al. Sluit aub. de pair wizard.\u0000"
-		}
-	},
-	"ir_generator": {
-		"flow": {
-			"cmd_received": "Knop is Ingedrukt\u0000",
-			"send_cmd": "Verzend Commando\u0000",
-			"send_cmd_number": "Zet op Kanaal\u0000"
-		},
-		"button_labels": {
-			"onoff": "Aan/Uit\u0000",
-			"power_on": "Aan\u0000",
-			"number_1": "1\u0000",
-			"number_2": "2\u0000",
-			"number_3": "3\u0000",
-			"number_4": "4\u0000",
-			"number_5": "5\u0000",
-			"number_6": "6\u0000",
-			"number_7": "7\u0000",
-			"number_8": "8\u0000",
-			"number_9": "9\u0000",
-			"dot": "Punt\u0000",
-			"brightness_up": "Helderheid Omhoog\u0000",
-			"brightness_down": "Helderheid Omlaag\u0000",
-			"home": "Home\u0000",
-			"next": "Volgende\u0000",
-			"previous": "Vorige\u0000",
-			"back": "Terug\u0000",
-			"ok": "Ok\u0000",
-			"list": "Lijst\u0000",
-			"option": "Optie\u0000",
-			"options": "Opties\u0000",
-			"text": "Teletext\u0000",
-			"subtitle": "ondertiteling\u0000",
-			"picture_format": "Beeldformaat\u0000",
-			"multiview": "Multiview\u0000",
-			"picture_style": "Beeld Stijl\u0000",
-			"2d": "2D\u0000",
-			"3d_format": "3D Formaat\u0000",
-			"3d_depth": "3D Diepte\u0000",
-			"audio_style": "Audio Stijl\u0000",
-			"surround_mode": "Surround Modus\u0000",
-			"headphone_volume": "Hoofdtelefoon Volume\u0000",
-			"2_player_gaming": "2 Speler Gaming\u0000",
-			"setup": "Setup\u0000",
-			"network": "Netwerk\u0000",
-			"scart": "Scart\u0000",
-			"netflix": "Netflix\u0000",
-			"search": "Zoek\u0000",
-			"source": "Source\u0000",
-			"volume_up": "Volume Omhoog\u0000",
-			"volume_down": "Volume Omlaag\u0000",
-			"mute": "Geluid Dempen\u0000",
-			"channel_up": "Kanaal Omhoog\u0000",
-			"channel_down": "Kanaal Omlaag\u0000",
-			"green": "Groen\u0000",
-			"tv": "TV\u0000",
-			"info": "Info\u0000",
-			"closed_captioning": "Ondertiteling\u0000",
-			"rewind": "Terugspoelen\u0000",
-			"play": "Afspelen\u0000",
-			"stop": "Stop\u0000",
-			"fast_forward": "Vooruitspoelen\u0000",
-			"record": "Openemen\u0000",
-			"pause": "Pause\u0000",
-			"guide": "Guide\u0000",
-			"arrow_up": "Onhoog\u0000",
-			"arrow_down": "Omlaag\u0000",
-			"arrow_left": "Links\u0000",
-			"arrow_right": "Rechts\u0000",
-			"red": "Rood\u0000",
-			"yellow": "Geel\u0000",
-			"blue": "Blauw\u0000",
-			"hdmi_1": "HDMI 1\u0000",
-			"hdmi_2": "HDMI 2\u0000",
-			"3d": "3D\u0000"
-		}
-	},
-	"new_philips_remote": "Philips TV (Nieuwe Modellen) Afstandsbediening",
-	"old_philips_remote": "Philips TV Afstandsbediening"
+  "cmds": {
+    "ambilight": "Ambilight Aan/Uit",
+    "ambilight_mode": "Ambilight Modus"
+  },
+  "new_philips_remote": "Philips TV (Nieuwe Modellen) Afstandsbediening",
+  "old_philips_remote": "Philips TV Afstandsbediening",
+  "generator": {
+    "generic": {
+      "on": "Aan\u0000\u0000",
+      "off": "Uit\u0000\u0000",
+      "left": "Links\u0000\u0000",
+      "middle": "Midden\u0000\u0000",
+      "right": "Rechts\u0000\u0000",
+      "up": "Up\u0000\u0000",
+      "down": "Down\u0000\u0000",
+      "button_pressed": "Knop is ingedrukt\u0000\u0000",
+      "buttons": {
+        "1": "Knop 1\u0000\u0000",
+        "2": "Knop 2\u0000\u0000",
+        "3": "Knop 3\u0000\u0000",
+        "4": "Knop 4\u0000\u0000",
+        "5": "Knop 5\u0000\u0000",
+        "6": "Knop 6\u0000\u0000",
+        "7": "Knop 7\u0000\u0000",
+        "8": "Knop 8\u0000\u0000",
+        "9": "Knop 9\u0000\u0000",
+        "10": "Knop 10\u0000\u0000",
+        "11": "Knop 11\u0000\u0000",
+        "12": "Knop 12\u0000\u0000",
+        "13": "Knop 13\u0000\u0000",
+        "14": "Knop 14\u0000\u0000",
+        "15": "Knop 15\u0000\u0000",
+        "16": "Knop 16\u0000\u0000",
+        "A": "Knop A\u0000\u0000",
+        "B": "Knop B\u0000\u0000",
+        "C": "Knop C\u0000\u0000",
+        "D": "Knop D\u0000\u0000",
+        "E": "Knop E\u0000\u0000",
+        "F": "Knop F\u0000\u0000",
+        "G": "Groep Knop\u0000\u0000",
+        "all": "All Knop\u0000\u0000",
+        "bright": "Fel Knop\u0000\u0000",
+        "dim": "Gedimt Knop\u0000\u0000",
+        "left": "Linker Knop\u0000\u0000",
+        "middle": "Middelste Knop\u0000\u0000",
+        "right": "Rechter Knop\u0000\u0000"
+      },
+      "channels": {
+        "1": "Kanaal 1\u0000\u0000",
+        "2": "Kanaal 2\u0000\u0000",
+        "3": "Kanaal 3\u0000\u0000",
+        "4": "Kanaal 4\u0000\u0000",
+        "5": "Kanaal 5\u0000\u0000",
+        "I": "Kanaal I\u0000\u0000",
+        "II": "Kanaal II\u0000\u0000",
+        "III": "Kanaal III\u0000\u0000",
+        "IV": "Kanaal IV\u0000\u0000",
+        "V": "Kanaal V\u0000\u0000",
+        "A": "Kanaal A\u0000\u0000",
+        "B": "Kanaal B\u0000\u0000",
+        "C": "Kanaal C\u0000\u0000",
+        "D": "Kanaal D\u0000\u0000",
+        "E": "Kanaal E\u0000\u0000",
+        "F": "Kanaal F\u0000\u0000"
+      },
+      "units": {
+        "1": "Unit 1\u0000\u0000",
+        "2": "Unit 2\u0000\u0000",
+        "3": "Unit 3\u0000\u0000",
+        "4": "Unit 4\u0000\u0000",
+        "5": "Unit 5\u0000\u0000",
+        "6": "Unit 6\u0000\u0000",
+        "7": "Unit 7\u0000\u0000",
+        "8": "Unit 8\u0000\u0000",
+        "9": "Unit 9\u0000\u0000",
+        "10": "Unit 10\u0000\u0000",
+        "11": "Unit 11\u0000\u0000",
+        "12": "Unit 12\u0000\u0000",
+        "13": "Unit 13\u0000\u0000",
+        "14": "Unit 14\u0000\u0000",
+        "15": "Unit 15\u0000\u0000",
+        "16": "Unit 16\u0000\u0000"
+      }
+    },
+    "error": {
+      "device_exists": "Apparaat is al gekoppeld met Homey.\u0000\u0000",
+      "no_device": "Er is geen apparaat ingesteld. Sluit de pairing wizard en probeer opnieuw.\u0000\u0000",
+      "no_settings": "Geen instelling object. Probeer aub opnieuw.\u0000\u0000",
+      "invalid_device": "Het apparaat dat is aangemaakt is incorrect. Verwijder dit apparaat en probeer opnieuw.\u0000\u0000"
+    },
+    "pair": {
+      "done": {
+        "title": {
+          "default": "Apparaat wordt toegevoegd!\u0000\u0000"
+        }
+      }
+    }
+  }
 }

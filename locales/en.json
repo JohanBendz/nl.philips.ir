@@ -1,91 +1,104 @@
 {
-	"cmds": {
-		"ambilight": "Toggle Ambilight",
-		"ambilight_mode": "Ambilight Mode"
-	},
-	"views": {
-		"generic_done": {
-			"title": "Adding device!\u0000"
-		},
-		"generic_check_device": {
-			"device_exists_message": "Device already exists. Please close the pairing wizard.\u0000"
-		}
-	},
-	"ir_generator": {
-		"flow": {
-			"cmd_received": "Button is Pressed\u0000",
-			"send_cmd": "Send Command\u0000",
-			"send_cmd_number": "Set Channel\u0000"
-		},
-		"button_labels": {
-			"onoff": "Power On/Off\u0000",
-			"power_on": "Power On\u0000",
-			"number_1": "1\u0000",
-			"number_2": "2\u0000",
-			"number_3": "3\u0000",
-			"number_4": "4\u0000",
-			"number_5": "5\u0000",
-			"number_6": "6\u0000",
-			"number_7": "7\u0000",
-			"number_8": "8\u0000",
-			"number_9": "9\u0000",
-			"dot": "Dot\u0000",
-			"brightness_up": "Increase Brightness\u0000",
-			"brightness_down": "Decrease Brightness\u0000",
-			"home": "Home\u0000",
-			"next": "Next\u0000",
-			"previous": "Previous\u0000",
-			"back": "Back\u0000",
-			"ok": "OK\u0000",
-			"list": "List\u0000",
-			"option": "Option\u0000",
-			"options": "Options\u0000",
-			"text": "Text\u0000",
-			"subtitle": "Subtitle\u0000",
-			"picture_format": "picture_format\u0000",
-			"multiview": "Multiview\u0000",
-			"picture_style": "Picture Style\u0000",
-			"2d": "2D\u0000",
-			"3d_format": "3D Format\u0000",
-			"3d_depth": "3D Depth\u0000",
-			"audio_style": "Audio Style\u0000",
-			"surround_mode": "Surround Mode\u0000",
-			"headphone_volume": "Headphone Volume\u0000",
-			"2_player_gaming": "2 Player Gaming Mode\u0000",
-			"setup": "Setup\u0000",
-			"network": "Network\u0000",
-			"scart": "SCART\u0000",
-			"netflix": "Netflix\u0000",
-			"search": "Search\u0000",
-			"source": "Source\u0000",
-			"volume_up": "Volume Up\u0000",
-			"volume_down": "Volume Down\u0000",
-			"mute": "Mute\u0000",
-			"channel_up": "Channel Up\u0000",
-			"channel_down": "Channel Down\u0000",
-			"green": "Green\u0000",
-			"tv": "TV\u0000",
-			"info": "Info\u0000",
-			"closed_captioning": "Closed captioning\u0000",
-			"rewind": "Rewind\u0000",
-			"play": "Play\u0000",
-			"stop": "Stop\u0000",
-			"fast_forward": "Fast Forward\u0000",
-			"record": "Record\u0000",
-			"pause": "Pause\u0000",
-			"guide": "Guide\u0000",
-			"arrow_up": "Up Arrow\u0000",
-			"arrow_down": "Down Arrow\u0000",
-			"arrow_left": "Left Arrow\u0000",
-			"arrow_right": "Right Arrow\u0000",
-			"red": "Red\u0000",
-			"yellow": "Yellow\u0000",
-			"blue": "Blue\u0000",
-			"hdmi_1": "HDMI 1\u0000",
-			"hdmi_2": "HDMI 2\u0000",
-			"3d": "3D\u0000"
-		}
-	},
-	"new_philips_remote": "Philips TV Remote (New Models Only)",
-	"old_philips_remote": "Philips TV Remote"
+  "cmds": {
+    "ambilight": "Toggle Ambilight",
+    "ambilight_mode": "Ambilight Mode"
+  },
+  "new_philips_remote": "Philips TV Remote (New Models Only)",
+  "old_philips_remote": "Philips TV Remote",
+  "generator": {
+    "generic": {
+      "on": "On\u0000\u0000",
+      "off": "Off\u0000\u0000",
+      "left": "Left\u0000\u0000",
+      "middle": "Middle\u0000\u0000",
+      "right": "Right\u0000\u0000",
+      "up": "Up\u0000\u0000",
+      "down": "Down\u0000\u0000",
+      "button_pressed": "Button is pressed\u0000\u0000",
+      "buttons": {
+        "1": "Button 1\u0000\u0000",
+        "2": "Button 2\u0000\u0000",
+        "3": "Button 3\u0000\u0000",
+        "4": "Button 4\u0000\u0000",
+        "5": "Button 5\u0000\u0000",
+        "6": "Button 6\u0000\u0000",
+        "7": "Button 7\u0000\u0000",
+        "8": "Button 8\u0000\u0000",
+        "9": "Button 9\u0000\u0000",
+        "10": "Button 10\u0000\u0000",
+        "11": "Button 11\u0000\u0000",
+        "12": "Button 12\u0000\u0000",
+        "13": "Button 13\u0000\u0000",
+        "14": "Button 14\u0000\u0000",
+        "15": "Button 15\u0000\u0000",
+        "16": "Button 16\u0000\u0000",
+        "A": "Button A\u0000\u0000",
+        "B": "Button B\u0000\u0000",
+        "C": "Button C\u0000\u0000",
+        "D": "Button D\u0000\u0000",
+        "E": "Button E\u0000\u0000",
+        "F": "Button F\u0000\u0000",
+        "G": "Group Button\u0000\u0000",
+        "all": "All Button\u0000\u0000",
+        "bright": "Bright Button\u0000\u0000",
+        "dim": "Dim Button\u0000\u0000",
+        "left": "Left Button\u0000\u0000",
+        "middle": "Middle Button\u0000\u0000",
+        "right": "Right Button\u0000\u0000"
+      },
+      "channels": {
+        "1": "Channel 1\u0000\u0000",
+        "2": "Channel 2\u0000\u0000",
+        "3": "Channel 3\u0000\u0000",
+        "4": "Channel 4\u0000\u0000",
+        "5": "Channel 5\u0000\u0000",
+        "I": "Channel I\u0000\u0000",
+        "II": "Channel II\u0000\u0000",
+        "III": "Channel III\u0000\u0000",
+        "IV": "Channel IV\u0000\u0000",
+        "V": "Channel V\u0000\u0000",
+        "A": "Channel A\u0000\u0000",
+        "B": "Channel B\u0000\u0000",
+        "C": "Channel C\u0000\u0000",
+        "D": "Channel D\u0000\u0000",
+        "E": "Channel E\u0000\u0000",
+        "F": "Channel F\u0000\u0000"
+      },
+      "units": {
+        "1": "Unit 1\u0000\u0000",
+        "2": "Unit 2\u0000\u0000",
+        "3": "Unit 3\u0000\u0000",
+        "4": "Unit 4\u0000\u0000",
+        "5": "Unit 5\u0000\u0000",
+        "6": "Unit 6\u0000\u0000",
+        "7": "Unit 7\u0000\u0000",
+        "8": "Unit 8\u0000\u0000",
+        "9": "Unit 9\u0000\u0000",
+        "10": "Unit 10\u0000\u0000",
+        "11": "Unit 11\u0000\u0000",
+        "12": "Unit 12\u0000\u0000",
+        "13": "Unit 13\u0000\u0000",
+        "14": "Unit 14\u0000\u0000",
+        "15": "Unit 15\u0000\u0000",
+        "16": "Unit 16\u0000\u0000"
+      }
+    },
+    "error": {
+      "device_exists": "This device is already paired with Homey.\u0000\u0000",
+      "no_device": "No device set to pair. Please close the pairing wizard and try again.\u0000\u0000",
+      "no_settings": "No settings object. Please try again.\u0000\u0000",
+      "invalid_device": "The device that was created is invalid. Please remove it and try pairing it again.\u0000\u0000",
+      "invalid_device_data": "The device that was created is invalid. Please remove it and try pairing it again.\u0000\u0000",
+      "data_no_object": "Data must be an object!\u0000\u0000",
+      "pairdevice_invalid_data": "New pairing device data is invalid, changes are reverted.\u0000\u0000",
+      "invalid_send_data": "Invalid data send request. Please contact the developer.\u0000\u0000"
+    },
+    "pair": {
+      "done": {
+        "title": {
+          "default": "Adding device!\u0000\u0000"
+        }
+      }
+    }
+  }
 }

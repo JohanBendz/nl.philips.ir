@@ -4,7 +4,8 @@
     "en": "Philips TV IR"
   },
   "version": "1.1.2",
-  "compatibility": ">=1.5.6",
+  "compatibility": ">=1.5.0",
+  "sdk": 2,
   "author": {
     "name": "Athom B.V.",
     "email": "info@athom.nl"
@@ -19,10 +20,8 @@
     "large": "./assets/images/large.jpg"
   },
   "signals": {
-    "433": {},
-    "868": {},
     "ir": {
-      "RC5": {
+      "rc5": {
         "carrier": 36000,
         "dutyCycle": 33,
         "manchesterUnit": 889,
@@ -70,6 +69,16 @@
             1,
             1,
             1
+          ],
+          "tv$~number_0": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
           ],
           "tv$~number_1": [
             0,
@@ -222,6 +231,7 @@
             1
           ],
           "tv$~tv": [
+            1,
             0,
             0,
             0,
@@ -482,12 +492,12 @@
             1
           ]
         },
-        "interval": 89100,
+        "interval": 32767,
         "repetitions": 5,
         "minimalLength": 8,
         "maximalLength": 8
       },
-      "RC6": {
+      "rc6": {
         "carrier": 36000,
         "dutyCycle": 50,
         "manchesterUnit": 444,
@@ -564,6 +574,24 @@
             0,
             1,
             1,
+            0,
+            0
+          ],
+          "tv$~number_0": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0,
             0
           ],
@@ -1756,7 +1784,7 @@
             0
           ]
         },
-        "interval": 83000,
+        "interval": 32767,
         "repetitions": 5,
         "minimalLength": 16,
         "maximalLength": 16
@@ -1765,12 +1793,33 @@
   },
   "drivers": [
     {
-      "id": "old_tv",
-      "name": {
-        "en": "Philips TV Remote",
-        "nl": "Philips TV Afstandsbediening"
+      "id": "new_tv",
+      "name": "new_philips_remote",
+      "icon": "./assets/new_remote/remote.svg",
+      "images": {
+        "small": "./assets/new_remote/images/small.jpg",
+        "large": "./assets/new_remote/images/large.jpg"
       },
       "class": "tv",
+      "rf": {
+        "signal": "rc6",
+        "minTxInterval": 250,
+        "cmdType": "tv",
+        "capabilityToCommandMap": {
+          "onoff": {
+            "true": "power_on",
+            "toggle": "onoff"
+          },
+          "volume_mute": {
+            "toggle": "mute"
+          },
+          "volume_up": "volume_up",
+          "volume_down": "volume_down",
+          "channel_up": "channel_up",
+          "channel_down": "channel_down"
+        },
+        "allowEmptyDataObject": true
+      },
       "capabilities": [
         "onoff",
         "volume_mute",
@@ -1779,28 +1828,41 @@
         "channel_up",
         "channel_down"
       ],
-      "images": {
-        "small": "./ir_generator/assets/old_remote/images/small.jpg",
-        "large": "./ir_generator/assets/old_remote/images/large.jpg"
-      },
       "pair": [
         {
-          "id": "generic_check_device",
-          "navigation": {}
-        },
-        {
-          "id": "generic_done",
-          "navigation": {}
+          "rf_template": "done",
+          "id": "done"
         }
       ]
     },
     {
-      "id": "new_tv",
-      "name": {
-        "en": "Philips TV Remote (New Models Only)",
-        "nl": "Philips TV (Nieuwe Modellen) Afstandsbediening"
+      "id": "old_tv",
+      "name": "old_philips_remote",
+      "icon": "./assets/old_remote/remote.svg",
+      "images": {
+        "small": "./assets/old_remote/images/small.jpg",
+        "large": "./assets/old_remote/images/large.jpg"
       },
       "class": "tv",
+      "rf": {
+        "signal": "rc5",
+        "minTxInterval": 250,
+        "cmdType": "tv",
+        "capabilityToCommandMap": {
+          "onoff": {
+            "true": "power_on",
+            "toggle": "onoff"
+          },
+          "volume_mute": {
+            "toggle": "mute"
+          },
+          "volume_up": "volume_up",
+          "volume_down": "volume_down",
+          "channel_up": "channel_up",
+          "channel_down": "channel_down"
+        },
+        "allowEmptyDataObject": true
+      },
       "capabilities": [
         "onoff",
         "volume_mute",
@@ -1809,18 +1871,10 @@
         "channel_up",
         "channel_down"
       ],
-      "images": {
-        "small": "./ir_generator/assets/new_remote/images/small.jpg",
-        "large": "./ir_generator/assets/new_remote/images/large.jpg"
-      },
       "pair": [
         {
-          "id": "generic_check_device",
-          "navigation": {}
-        },
-        {
-          "id": "generic_done",
-          "navigation": {}
+          "rf_template": "done",
+          "id": "done"
         }
       ]
     }
@@ -1894,8 +1948,8 @@
           {
             "name": "number",
             "type": "number",
-            "min": "0",
-            "max": "9999"
+            "min": 0,
+            "max": 9999
           },
           {
             "name": "device",
@@ -1932,8 +1986,8 @@
           {
             "name": "number",
             "type": "number",
-            "min": "0",
-            "max": "9999"
+            "min": 0,
+            "max": 9999
           },
           {
             "name": "device",
