@@ -2,11 +2,14 @@
 
 module.exports = {
 	id: 'new_tv',
-	name: 'new_philips_remote',
-	icon: './assets/new_remote/remote.svg',
+	name: {
+		en: 'Philips TV Remote (New Models Only)',
+		nl: 'Philips TV Afstandsbediening (Nieuwe Modellen)',
+	},
+	icon: './drivers/new_tv/assets/icon.svg',
 	images: {
-		small: './assets/new_remote/images/small.jpg',
-		large: './assets/new_remote/images/large.jpg',
+		small: './drivers/new_tv/assets/images/small.jpg',
+		large: './drivers/new_tv/assets/images/large.jpg',
 	},
 	class: 'tv',
 	rf: {

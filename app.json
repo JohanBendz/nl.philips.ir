@@ -1794,11 +1794,14 @@
   "drivers": [
     {
       "id": "new_tv",
-      "name": "new_philips_remote",
-      "icon": "./assets/new_remote/remote.svg",
+      "name": {
+        "en": "Philips TV Remote (New Models Only)",
+        "nl": "Philips TV Afstandsbediening (Nieuwe Modellen)"
+      },
+      "icon": "./drivers/new_tv/assets/icon.svg",
       "images": {
-        "small": "./assets/new_remote/images/small.jpg",
-        "large": "./assets/new_remote/images/large.jpg"
+        "small": "./drivers/new_tv/assets/images/small.jpg",
+        "large": "./drivers/new_tv/assets/images/large.jpg"
       },
       "class": "tv",
       "rf": {
@@ -1817,8 +1820,7 @@
           "volume_down": "volume_down",
           "channel_up": "channel_up",
           "channel_down": "channel_down"
-        },
-        "allowEmptyDataObject": true
+        }
       },
       "capabilities": [
         "onoff",
@@ -1837,11 +1839,14 @@
     },
     {
       "id": "old_tv",
-      "name": "old_philips_remote",
-      "icon": "./assets/old_remote/remote.svg",
+      "name": {
+        "en": "Philips TV Remote",
+        "nl": "Philips TV Afstandsbediening"
+      },
+      "icon": "./drivers/old_tv/assets/icon.svg",
       "images": {
-        "small": "./assets/old_remote/images/small.jpg",
-        "large": "./assets/old_remote/images/large.jpg"
+        "small": "./drivers/old_tv/assets/images/small.jpg",
+        "large": "./drivers/old_tv/assets/images/large.jpg"
       },
       "class": "tv",
       "rf": {
@@ -1860,8 +1865,7 @@
           "volume_down": "volume_down",
           "channel_up": "channel_up",
           "channel_down": "channel_down"
-        },
-        "allowEmptyDataObject": true
+        }
       },
       "capabilities": [
         "onoff",
@@ -1884,8 +1888,8 @@
       {
         "id": "old_tv:cmd_received",
         "title": {
-          "en": "Button is Pressed\u0000",
-          "nl": "Knop is Ingedrukt\u0000"
+          "en": "Button is Pressed",
+          "nl": "Knop is Ingedrukt"
         },
         "args": [
           {
@@ -1902,8 +1906,8 @@
       {
         "id": "new_tv:cmd_received",
         "title": {
-          "en": "Button is Pressed\u0000",
-          "nl": "Knop is Ingedrukt\u0000"
+          "en": "Button is Pressed",
+          "nl": "Knop is Ingedrukt"
         },
         "args": [
           {
@@ -1923,8 +1927,8 @@
       {
         "id": "old_tv:send_cmd",
         "title": {
-          "en": "Send Command\u0000",
-          "nl": "Verzend Commando\u0000"
+          "en": "Send Command",
+          "nl": "Verzend Commando"
         },
         "args": [
           {
@@ -1941,8 +1945,8 @@
       {
         "id": "old_tv:send_cmd_number",
         "title": {
-          "en": "Set Channel\u0000",
-          "nl": "Zet op Kanaal\u0000"
+          "en": "Set Channel",
+          "nl": "Zet op Kanaal"
         },
         "args": [
           {
@@ -1961,8 +1965,8 @@
       {
         "id": "new_tv:send_cmd",
         "title": {
-          "en": "Send Command\u0000",
-          "nl": "Verzend Commando\u0000"
+          "en": "Send Command",
+          "nl": "Verzend Commando"
         },
         "args": [
           {
@@ -1979,8 +1983,8 @@
       {
         "id": "new_tv:send_cmd_number",
         "title": {
-          "en": "Set Channel\u0000",
-          "nl": "Zet op Kanaal\u0000"
+          "en": "Set Channel",
+          "nl": "Zet op Kanaal"
         },
         "args": [
           {

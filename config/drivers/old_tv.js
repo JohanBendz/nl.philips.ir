@@ -4,11 +4,14 @@ const newTvConfig = require('./new_tv');
 
 module.exports = Object.assign({}, newTvConfig, {
 	id: 'old_tv',
-	name: 'old_philips_remote',
-	icon: './assets/old_remote/remote.svg',
+	name: {
+		en: 'Philips TV Remote',
+		nl: 'Philips TV Afstandsbediening',
+	},
+	icon: './drivers/old_tv/assets/icon.svg',
 	images: {
-		small: './assets/old_remote/images/small.jpg',
-		large: './assets/old_remote/images/large.jpg',
+		small: './drivers/old_tv/assets/images/small.jpg',
+		large: './drivers/old_tv/assets/images/large.jpg',
 	},
 	rf: Object.assign({}, newTvConfig.rf, {
 		signal: 'rc5',
