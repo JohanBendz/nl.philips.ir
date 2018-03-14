@@ -1,0 +1,9 @@
+{
+    "class": "other",
+    "pair": [
+        {
+            "$template": "rf.done",
+            "id": "rf.done"
+        }
+    ]
+}

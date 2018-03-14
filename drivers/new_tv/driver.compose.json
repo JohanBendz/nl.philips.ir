@@ -1,0 +1,16 @@
+{
+    "$extends": [
+        "rf.ir_remote",
+        "philips",
+        "rc6"
+    ],
+    "name": {
+        "en": "Philips TV Remote (New Models Only)",
+        "nl": "Philips TV Afstandsbediening (Nieuwe Modellen)"
+    },
+    "icon": "./drivers/new_tv/assets/icon.svg",
+    "images": {
+        "small": "./drivers/new_tv/assets/images/small.jpg",
+        "large": "./drivers/new_tv/assets/images/large.jpg"
+    }
+}

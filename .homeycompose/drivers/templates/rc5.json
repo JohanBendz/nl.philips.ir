@@ -1,0 +1,20 @@
+{
+    "rf": {
+        "signal": "rc5",
+        "minTxInterval": 250,
+        "cmdType": "tv",
+        "capabilityToCommandMap": {
+            "onoff": {
+                "true": "power_on",
+                "toggle": "onoff"
+            },
+            "volume_mute": {
+                "toggle": "mute"
+            },
+            "volume_up": "volume_up",
+            "volume_down": "volume_down",
+            "channel_up": "channel_up",
+            "channel_down": "channel_down"
+        }
+    }
+}

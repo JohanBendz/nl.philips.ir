@@ -1,0 +1,16 @@
+{
+    "$extends": [
+        "rf.ir_remote",
+        "philips",
+        "rc5"
+    ],
+    "name": {
+        "en": "Philips TV Remote",
+        "nl": "Philips TV Afstandsbediening"
+    },
+    "icon": "./drivers/old_tv/assets/icon.svg",
+    "images": {
+        "small": "./drivers/old_tv/assets/images/small.jpg",
+        "large": "./drivers/old_tv/assets/images/large.jpg"
+    }
+}

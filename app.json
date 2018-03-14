@@ -19,6 +19,214 @@
     "small": "./assets/images/small.jpg",
     "large": "./assets/images/large.jpg"
   },
+  "flow": {
+    "triggers": [
+      {
+        "id": "new_tv:cmd_received",
+        "title": {
+          "en": "Button is Pressed",
+          "nl": "Knop is Ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=new_tv"
+          },
+          {
+            "name": "cmd",
+            "type": "autocomplete"
+          }
+        ]
+      },
+      {
+        "id": "old_tv:cmd_received",
+        "title": {
+          "en": "Button is Pressed",
+          "nl": "Knop is Ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=old_tv"
+          },
+          {
+            "name": "cmd",
+            "type": "autocomplete"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "id": "new_tv:send_cmd",
+        "title": {
+          "en": "Send Command",
+          "nl": "Verzend Commando"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=new_tv"
+          },
+          {
+            "name": "cmd",
+            "type": "autocomplete"
+          }
+        ]
+      },
+      {
+        "id": "new_tv:send_cmd_number",
+        "title": {
+          "en": "Set Channel",
+          "nl": "Zet op Kanaal"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=new_tv"
+          },
+          {
+            "name": "number",
+            "type": "number",
+            "min": 0,
+            "max": 9999
+          }
+        ]
+      },
+      {
+        "id": "old_tv:send_cmd",
+        "title": {
+          "en": "Send Command",
+          "nl": "Verzend Commando"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=old_tv"
+          },
+          {
+            "name": "cmd",
+            "type": "autocomplete"
+          }
+        ]
+      },
+      {
+        "id": "old_tv:send_cmd_number",
+        "title": {
+          "en": "Set Channel",
+          "nl": "Zet op Kanaal"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=old_tv"
+          },
+          {
+            "name": "number",
+            "type": "number",
+            "min": 0,
+            "max": 9999
+          }
+        ]
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "class": "tv",
+      "pair": [
+        {
+          "id": "rf.done"
+        }
+      ],
+      "capabilities": [
+        "onoff",
+        "volume_mute",
+        "volume_up",
+        "volume_down",
+        "channel_up",
+        "channel_down"
+      ],
+      "rf": {
+        "signal": "rc6",
+        "minTxInterval": 250,
+        "cmdType": "tv",
+        "capabilityToCommandMap": {
+          "onoff": {
+            "true": "power_on",
+            "toggle": "onoff"
+          },
+          "volume_mute": {
+            "toggle": "mute"
+          },
+          "volume_up": "volume_up",
+          "volume_down": "volume_down",
+          "channel_up": "channel_up",
+          "channel_down": "channel_down"
+        }
+      },
+      "name": {
+        "en": "Philips TV Remote (New Models Only)",
+        "nl": "Philips TV Afstandsbediening (Nieuwe Modellen)"
+      },
+      "icon": "./drivers/new_tv/assets/icon.svg",
+      "images": {
+        "small": "./drivers/new_tv/assets/images/small.jpg",
+        "large": "./drivers/new_tv/assets/images/large.jpg"
+      },
+      "id": "new_tv"
+    },
+    {
+      "class": "tv",
+      "pair": [
+        {
+          "id": "rf.done"
+        }
+      ],
+      "capabilities": [
+        "onoff",
+        "volume_mute",
+        "volume_up",
+        "volume_down",
+        "channel_up",
+        "channel_down"
+      ],
+      "rf": {
+        "signal": "rc5",
+        "minTxInterval": 250,
+        "cmdType": "tv",
+        "capabilityToCommandMap": {
+          "onoff": {
+            "true": "power_on",
+            "toggle": "onoff"
+          },
+          "volume_mute": {
+            "toggle": "mute"
+          },
+          "volume_up": "volume_up",
+          "volume_down": "volume_down",
+          "channel_up": "channel_up",
+          "channel_down": "channel_down"
+        }
+      },
+      "name": {
+        "en": "Philips TV Remote",
+        "nl": "Philips TV Afstandsbediening"
+      },
+      "icon": "./drivers/old_tv/assets/icon.svg",
+      "images": {
+        "small": "./drivers/old_tv/assets/images/small.jpg",
+        "large": "./drivers/old_tv/assets/images/large.jpg"
+      },
+      "id": "old_tv"
+    }
+  ],
   "signals": {
     "ir": {
       "rc5": {
@@ -1790,216 +1998,5 @@
         "maximalLength": 16
       }
     }
-  },
-  "drivers": [
-    {
-      "id": "new_tv",
-      "name": {
-        "en": "Philips TV Remote (New Models Only)",
-        "nl": "Philips TV Afstandsbediening (Nieuwe Modellen)"
-      },
-      "icon": "./drivers/new_tv/assets/icon.svg",
-      "images": {
-        "small": "./drivers/new_tv/assets/images/small.jpg",
-        "large": "./drivers/new_tv/assets/images/large.jpg"
-      },
-      "class": "tv",
-      "rf": {
-        "signal": "rc6",
-        "minTxInterval": 250,
-        "cmdType": "tv",
-        "capabilityToCommandMap": {
-          "onoff": {
-            "true": "power_on",
-            "toggle": "onoff"
-          },
-          "volume_mute": {
-            "toggle": "mute"
-          },
-          "volume_up": "volume_up",
-          "volume_down": "volume_down",
-          "channel_up": "channel_up",
-          "channel_down": "channel_down"
-        }
-      },
-      "capabilities": [
-        "onoff",
-        "volume_mute",
-        "volume_up",
-        "volume_down",
-        "channel_up",
-        "channel_down"
-      ],
-      "pair": [
-        {
-          "rf_template": "done",
-          "id": "done"
-        }
-      ]
-    },
-    {
-      "id": "old_tv",
-      "name": {
-        "en": "Philips TV Remote",
-        "nl": "Philips TV Afstandsbediening"
-      },
-      "icon": "./drivers/old_tv/assets/icon.svg",
-      "images": {
-        "small": "./drivers/old_tv/assets/images/small.jpg",
-        "large": "./drivers/old_tv/assets/images/large.jpg"
-      },
-      "class": "tv",
-      "rf": {
-        "signal": "rc5",
-        "minTxInterval": 250,
-        "cmdType": "tv",
-        "capabilityToCommandMap": {
-          "onoff": {
-            "true": "power_on",
-            "toggle": "onoff"
-          },
-          "volume_mute": {
-            "toggle": "mute"
-          },
-          "volume_up": "volume_up",
-          "volume_down": "volume_down",
-          "channel_up": "channel_up",
-          "channel_down": "channel_down"
-        }
-      },
-      "capabilities": [
-        "onoff",
-        "volume_mute",
-        "volume_up",
-        "volume_down",
-        "channel_up",
-        "channel_down"
-      ],
-      "pair": [
-        {
-          "rf_template": "done",
-          "id": "done"
-        }
-      ]
-    }
-  ],
-  "flow": {
-    "triggers": [
-      {
-        "id": "old_tv:cmd_received",
-        "title": {
-          "en": "Button is Pressed",
-          "nl": "Knop is Ingedrukt"
-        },
-        "args": [
-          {
-            "name": "cmd",
-            "type": "autocomplete"
-          },
-          {
-            "name": "device",
-            "type": "device",
-            "filter": "driver_id=old_tv"
-          }
-        ]
-      },
-      {
-        "id": "new_tv:cmd_received",
-        "title": {
-          "en": "Button is Pressed",
-          "nl": "Knop is Ingedrukt"
-        },
-        "args": [
-          {
-            "name": "cmd",
-            "type": "autocomplete"
-          },
-          {
-            "name": "device",
-            "type": "device",
-            "filter": "driver_id=new_tv"
-          }
-        ]
-      }
-    ],
-    "conditions": [],
-    "actions": [
-      {
-        "id": "old_tv:send_cmd",
-        "title": {
-          "en": "Send Command",
-          "nl": "Verzend Commando"
-        },
-        "args": [
-          {
-            "name": "cmd",
-            "type": "autocomplete"
-          },
-          {
-            "name": "device",
-            "type": "device",
-            "filter": "driver_id=old_tv"
-          }
-        ]
-      },
-      {
-        "id": "old_tv:send_cmd_number",
-        "title": {
-          "en": "Set Channel",
-          "nl": "Zet op Kanaal"
-        },
-        "args": [
-          {
-            "name": "number",
-            "type": "number",
-            "min": 0,
-            "max": 9999
-          },
-          {
-            "name": "device",
-            "type": "device",
-            "filter": "driver_id=old_tv"
-          }
-        ]
-      },
-      {
-        "id": "new_tv:send_cmd",
-        "title": {
-          "en": "Send Command",
-          "nl": "Verzend Commando"
-        },
-        "args": [
-          {
-            "name": "cmd",
-            "type": "autocomplete"
-          },
-          {
-            "name": "device",
-            "type": "device",
-            "filter": "driver_id=new_tv"
-          }
-        ]
-      },
-      {
-        "id": "new_tv:send_cmd_number",
-        "title": {
-          "en": "Set Channel",
-          "nl": "Zet op Kanaal"
-        },
-        "args": [
-          {
-            "name": "number",
-            "type": "number",
-            "min": 0,
-            "max": 9999
-          },
-          {
-            "name": "device",
-            "type": "device",
-            "filter": "driver_id=new_tv"
-          }
-        ]
-      }
-    ]
   }
 }
