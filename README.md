@@ -4,6 +4,10 @@ This app enables Homey to listen to signals from Philips IR remotes and can send
 
 # Changelog
 
+#### v1.2.0
+Rewrite to App SDK2.
+If you experience any bugs please report them here: https://github.com/athombv/homey/issues
+
 #### v1.1.1
 Reverted command repetitions to 1 due to reports of commands triggering multiple times.
 
