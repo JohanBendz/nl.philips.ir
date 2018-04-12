@@ -155,7 +155,7 @@
       ],
       "rf": {
         "signal": "rc6",
-        "minTxInterval": 250,
+        "minTxInterval": 500,
         "cmdType": "tv",
         "capabilityToCommandMap": {
           "onoff": {
@@ -199,7 +199,7 @@
       ],
       "rf": {
         "signal": "rc5",
-        "minTxInterval": 250,
+        "minTxInterval": 500,
         "cmdType": "tv",
         "capabilityToCommandMap": {
           "onoff": {

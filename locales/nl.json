@@ -726,7 +726,9 @@
       "CHANNEL_SKIP": "Sla Kanaal Over",
       "BBE": "BBE",
       "AUTO_SEARCH": "Auto Zoeken",
-      "MODE": "Modus"
+      "MODE": "Modus",
+      "ambilight": "Ambilight",
+      "ambilight_mode": "Ambilight Modus"
     }
   }
 }
