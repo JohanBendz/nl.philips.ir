@@ -181,7 +181,8 @@
           "switch_generated": "Gebruik de bovenstaande knop om het apparaat te testen. Klik op volgende om verder te gaan.",
           "switch": "Gebruik de afstandsbediening of de bovenstaande knop om het apparaat te testen. Klik op volgende om verder te gaan.",
           "doorbell_generated": "Gebruik de bovenstaande knop om de deurbel te testen. Klik op volgende om verder te gaan.",
-          "doorbell": "Gebruik de deurbel of de bovenstaande knop om de deurbel te testen. Klik op volgende om verder te gaan."
+          "doorbell": "Gebruik de deurbel of de bovenstaande knop om de deurbel te testen. Klik op volgende om verder te gaan.",
+          "blinds": "Gebruik de afstandsbediening of de bovenstaande knoppen om de zonnewering te testen. Klik op volgende om verder te gaan."
         }
       },
       "codewheel": {
@@ -190,6 +191,9 @@
         },
         "body": {
           "default": "Klik op de karakters op de bovenstaande lettercodeshijf of pas de lettercodeshijf op het apparaat aan zodat deze gelijk aan elkaar zijn, klik daarna op volgende."
+        },
+        "programbutton": {
+          "default": "Programmeer"
         }
       },
       "dipswitch": {
@@ -317,12 +321,12 @@
     },
     "settings": {
       "groups": {
-        "general": "General Settings"
+        "general": "Algemene Instellingen"
       },
       "rotated": {
-        "0": "No",
-        "180": "Yes",
-        "label": "Invert signal"
+        "0": "Nee",
+        "180": "Ja",
+        "label": "Inverteer signaal"
       }
     },
     "generic": {

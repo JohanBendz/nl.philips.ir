@@ -1,4 +1,8 @@
 {
+  "class": "doorbell",
+  "capabilities": [
+    "alarm_generic"
+  ],
   "pair": [
     {
       "$template": "rf.choice",
@@ -70,9 +74,5 @@
       "$template": "rf.done",
       "id": "rf.done"
     }
-  ],
-  "class": "doorbell",
-  "capabilities": [
-    "alarm_generic"
   ]
 }

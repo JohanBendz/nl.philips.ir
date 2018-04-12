@@ -98,6 +98,9 @@
         },
         "body": {
           "default": "Click the characters on the code wheel above or configure the wheels on the device so they match, then click next."
+        },
+        "programbutton": {
+          "default": "Program"
         }
       },
       "dipswitch": {
@@ -227,12 +230,12 @@
     },
     "settings": {
       "groups": {
-        "general": "Algemene Instellingen"
+        "general": "General Settings"
       },
       "rotated": {
-        "0": "Nee",
-        "180": "Ja",
-        "label": "Inverteer signaal"
+        "0": "No",
+        "180": "Yes",
+        "label": "Invert signal"
       }
     },
     "generic": {
@@ -859,7 +862,9 @@
       "BBE": "BBE",
       "RECALL": "Recall",
       "AUTO_SEARCH": "Auto Search",
-      "MODE": "Mode"
+      "MODE": "Mode",
+      "ambilight": "Ambilight",
+      "ambilight_mode": "Ambilight Mode"
     }
   }
 }

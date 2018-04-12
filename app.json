@@ -140,11 +140,6 @@
   "drivers": [
     {
       "class": "tv",
-      "pair": [
-        {
-          "id": "rf.done"
-        }
-      ],
       "capabilities": [
         "onoff",
         "volume_mute",
@@ -152,6 +147,11 @@
         "volume_down",
         "channel_up",
         "channel_down"
+      ],
+      "pair": [
+        {
+          "id": "rf.done"
+        }
       ],
       "rf": {
         "signal": "rc6",
@@ -184,11 +184,6 @@
     },
     {
       "class": "tv",
-      "pair": [
-        {
-          "id": "rf.done"
-        }
-      ],
       "capabilities": [
         "onoff",
         "volume_mute",
@@ -196,6 +191,11 @@
         "volume_down",
         "channel_up",
         "channel_down"
+      ],
+      "pair": [
+        {
+          "id": "rf.done"
+        }
       ],
       "rf": {
         "signal": "rc5",
