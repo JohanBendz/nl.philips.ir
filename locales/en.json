@@ -866,5 +866,11 @@
       "ambilight": "Ambilight",
       "ambilight_mode": "Ambilight Mode"
     }
+  },
+  "device": {
+    "name": {
+      "old_tv": "Philips TV Afstandsbediening (oud model)",
+      "new_tv": "Philips TV Afstandsbediening"
+    }
   }
 }

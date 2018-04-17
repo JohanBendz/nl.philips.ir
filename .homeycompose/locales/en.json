@@ -1,4 +1,10 @@
 {
+	"device": {
+		"name": {
+			"old_tv": "Philips TV Afstandsbediening (oud model)",
+			"new_tv": "Philips TV Afstandsbediening"
+		}
+	},
 	"rf": {
 		"commands": {
 			"ambilight": "Ambilight",

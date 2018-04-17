@@ -1,15 +1,7 @@
 'use strict';
 
-const Homey = require('homey');
-const util = require('homey-rfdriver').util;
+const PhilipsDevice = require('../../lib/PhilipsDevice');
 
-module.exports = RFDevice => class MyDevice extends RFDevice {
+module.exports = RFDevice => class MyDevice extends PhilipsDevice(RFDevice) {
 
-	onInit() {
-		super.onInit();
-
-		if (this.isPairInstance) {
-			this.setDeviceState({ data: { id: this.getDriver().id } });
-		}
-	}
 };

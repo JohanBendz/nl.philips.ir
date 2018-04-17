@@ -1,4 +1,10 @@
 {
+	"device": {
+		"name": {
+			"old_tv": "Philips TV Remote (old model)",
+			"new_tv": "Philips TV Remote"
+		}
+	},
 	"rf": {
 		"commands": {
 			"ambilight": "Ambilight",

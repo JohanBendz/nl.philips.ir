@@ -5,8 +5,8 @@
         "rc6"
     ],
     "name": {
-        "en": "Philips TV Remote (New Models Only)",
-        "nl": "Philips TV Afstandsbediening (Nieuwe Modellen)"
+        "en": "New models",
+        "nl": "Nieuwe modellen"
     },
     "icon": "./drivers/new_tv/assets/icon.svg",
     "images": {

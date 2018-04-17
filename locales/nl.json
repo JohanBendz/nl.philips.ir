@@ -730,5 +730,11 @@
       "ambilight": "Ambilight",
       "ambilight_mode": "Ambilight Modus"
     }
+  },
+  "device": {
+    "name": {
+      "old_tv": "Philips TV Remote (old model)",
+      "new_tv": "Philips TV Remote"
+    }
   }
 }

@@ -8,7 +8,7 @@
 		"channel_up",
 		"channel_down"
 	],
-	"$flows": {
+	"$flow": {
 		"triggers": [
 			{
 				"id": "{{driverId}}:cmd_received",
