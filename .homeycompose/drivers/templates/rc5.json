@@ -6,6 +6,7 @@
         "capabilityToCommandMap": {
             "onoff": {
                 "true": "power_on",
+                "false": "power_off",
                 "toggle": "onoff"
             },
             "volume_mute": {
